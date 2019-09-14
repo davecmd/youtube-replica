@@ -5,30 +5,156 @@
     outline: 0;
     border: 0;
 }
-button {
+
+a {
+    text-decoration: none;
+    color: rgb(6, 95, 212);
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+}
+body {
+    background-color: #fafafa;
+}
+ header *, .video-features * {
+    display: inline-block;
     background: none;
 	border: none;
     padding: 0;
-	cursor: pointer;
+    cursor: pointer;
+    
 
 }
-header {
-    margin: 10px 8px 8px 8px;
+
+#youtube img{
+    width:110px; /* you can use % */
+    height: auto;
+    
 }
+
+main {
+margin: 24px;
+border-bottom: 1px solid;
+}
+
+
 main, aside {
-    display: inline;
+    display: inline-block;
+    margin-top: 75px;
 }
+
+.video-features {
+    float: right;
+}
+
 aside {
-    background-color: blue;   
-}
-header {
+    vertical-align: top;
     
 }
 
-#youtube {
+.grid {
+    display: grid;
+    vertical-align: top;
+    grid-template-columns: 200px 250px;
+    row-gap: 5px;
+}
+
+.grid div:nth-child(-n + 2)  {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.grid-item p {
+    word-wrap: break-word;
+    max-width:200px;
+    font-size: 14px; 
+    margin: 0 0 5px 10px;
     
 }
 
+
+.next-text p:first-child {
+    
+}
+.next-text p:nth-last-child(-n+2) {
+    color: rgb(96, 96, 96);
+}
+
+.grid img {
+    width:200px; /* you can use % */
+    height: auto;
+    
+}
+
+aside h2 {
+    display: inline-block;
+    font-size: 17px;
+    font-style: normal;
+    padding: 5px;
+}
+
+.autoplay {
+    float: right;
+}
+
+.search-bar {
+    position: relative;
+    left: 30%;
+    border: 1px solid black;
+
+}
+.search-bar-input {
+    margin-right: 0;
+    padding-left: 10px;
+    width: 500px;
+    
+    
+}
+iframe {
+    width: 1369px;
+    height: 770px;
+}
+button:has(> .fas-search)  {
+    
+    margin: 0px ;
+    
+}
+
+button {
+    margin: 8px;
+}
+
+
+
+.sign-in-features {
+    float: right;
+}
+
+
+
+.fas {
+    font-size: 1.35em;
+    color: rgb(96, 96, 96);
+}
+
+.video-title {
+    font-size: 18px;
+}
+
+
+.sign-in-button {
+    color: #065FD4;
+    border: 1px;
+    padding: 5px;
+    border-style: solid;
+    border-color: #065FD4;
+    border-radius: 5%;
+}
 .fa-user-circle {
     color:#065FD4;
 }
